@@ -1,0 +1,26 @@
+//十进制转换十六进制
+#include <iostream>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int a,i=0;
+	char b[100];
+	scanf("%d",&a);
+	if(a==0){
+		printf("0");
+	}
+	else{
+		while(a!=0){
+			if(a%16>=10)
+				b[i++]=a%16+'A'-10;
+			else
+				b[i++]=a%16+'0';
+			a=a/16;
+		}
+	} 
+	
+	for(int k=i-1;k>=0;k--)
+		printf("%c",b[k]);
+	
+	return 0;
+}
