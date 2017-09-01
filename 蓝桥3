@@ -1,0 +1,14 @@
+//c语言 时间转换算法
+#include <iostream>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int t,h,m,s;
+	scanf("%d",&t);
+	h=t/3600;
+	t=t%3600;
+	m=t/60;
+	s=t%60;
+	printf("%d:%d:%d",h,m,s);
+	return 0;
+}
